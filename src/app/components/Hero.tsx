@@ -1,9 +1,6 @@
 export default function Hero() {
   return (
-    <section
-      className="flex h-screen flex-col items-center justify-center bg-gray-50 px-4 text-center"
-      style={{ paddingTop: 'var(--header-height, 72px)' }}
-    >
+    <section className="flex h-screen flex-col items-center justify-center bg-gray-50 px-4 text-center">
       {' '}
       <h1 className="mb-6 text-4xl font-extrabold md:text-6xl">Welcome to Our Product</h1>
       <p className="mb-8 max-w-2xl text-lg text-gray-600 md:text-xl">
