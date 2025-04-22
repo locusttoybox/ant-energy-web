@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import LogoImage from '../assets/ant-logo.png';
 
 interface HeaderProps {
   children?: React.ReactNode;
@@ -10,7 +12,13 @@ const Header: React.FC<HeaderProps> = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="my-4 flex h-16 items-center justify-between">
           {' '}
-          <div className="text-xl font-bold">Logo</div>
+          <Link href="/">
+            <img
+              src={LogoImage.src}
+              alt="pc-group-logo"
+              className="color-white h-18 w-40 align-baseline"
+            ></img>
+          </Link>
           <nav className="space-x-6">
             <a href="#">Features</a>
             <a href="#">Pricing</a>
