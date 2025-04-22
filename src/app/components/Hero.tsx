@@ -1,3 +1,5 @@
+import Button from './Button';
+
 export default function Hero() {
   return (
     <section className="flex h-screen flex-col items-center justify-center bg-gray-50 px-4 text-center">
@@ -6,9 +8,9 @@ export default function Hero() {
       <p className="mb-8 max-w-2xl text-lg text-gray-600 md:text-xl">
         Discover the features that make our solution unique. Designed for teams, loved by everyone.
       </p>
-      <button className="rounded-2xl bg-blue-600 px-6 py-3 text-lg text-white transition hover:bg-blue-700">
-        Get Started
-      </button>
+      <Button className="mt-8 w-full sm:w-[40%] lg:w-[40%]" variant="outlineBlack">
+        Pieteikties
+      </Button>
     </section>
   );
 }
