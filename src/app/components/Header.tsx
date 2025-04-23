@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 import LogoImage from '../assets/ant-logo.png';
 
 interface HeaderProps {
@@ -12,13 +12,13 @@ const Header: React.FC<HeaderProps> = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="my-4 flex h-16 items-center justify-between">
           {' '}
-          <Link href="/">
-            <img
-              src={LogoImage.src}
-              alt="pc-group-logo"
-              className="color-white h-18 w-40 align-baseline"
-            ></img>
-          </Link>
+          <Image
+            src={LogoImage.src}
+            width={160}
+            height={40}
+            alt="pc-group-logo"
+            className="color-white h-18 w-40 align-baseline"
+          ></Image>
           <nav className="space-x-6">
             <a href="#">Features</a>
             <a href="#">Pricing</a>
