@@ -6,7 +6,7 @@ import '../globals.css';
 export default function Features() {
   return (
     <section id="features" className="bg-secondary mx-auto px-8 sm:px-6 lg:px-36 lg:py-12">
-      <div className="text-background mb-6 flex items-center py-10 text-4xl font-extrabold md:text-4xl">
+      <div className="text-background flex items-center py-10 text-4xl font-extrabold md:text-4xl">
         <h1>Key Features</h1>
       </div>
       {/* 1 feature */}

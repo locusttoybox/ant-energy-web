@@ -3,7 +3,7 @@ import '../globals.css';
 
 export default function AboutProject() {
   return (
-    <section id="about" className="container flex h-screen px-8">
+    <section id="about" className="container flex h-screen px-8 pt-12 lg:pt-24">
       <div className="text-accent mb-6 flex-col py-10 text-4xl font-extrabold md:text-4xl">
         <h1>About Project</h1>
         <p className="text-accent mb-8 max-w-2xl pt-12 text-lg md:text-xl">
