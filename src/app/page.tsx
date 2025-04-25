@@ -1,19 +1,25 @@
+import './globals.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import './globals.css';
-import Features from './components/Features';
+import KeyFeatures from './components/KeyFeatures';
+import TargetUsers from './components/TargetUsers';
+import UseCases from './components/UseCases';
+import Overview from './components/Overview';
 import AboutProject from './components/AboutProject';
 
 export default function Home() {
   return (
     <>
       <main className="relative mx-auto w-full">
-        <div className="bg-background flex min-h-screen flex-col items-center justify-center">
+        <div className="bg-background flex min-h-screen flex-col">
           <Header />
           <Hero />
-          <AboutProject />
+          <Overview />
+          <KeyFeatures />
 
-          <Features />
+          <TargetUsers />
+          <AboutProject />
+          <UseCases />
         </div>
       </main>
     </>

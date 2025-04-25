@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #ff5500;
+  --accent: #f105e3;
   --secondary: #161622;
   --header-height: 72px;
 }
@@ -21,7 +21,7 @@
   :root {
     --background: #ffffff;
     --foreground: #ededed;
-    --accent: #ff5500;
+    --accent: #f105e3;
     --header-height: 72px;
   }
 }
