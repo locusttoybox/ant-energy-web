@@ -8,7 +8,7 @@ import HomeImage from '../assets/home-screen.png';
 export default function UseCases() {
   return (
     <section
-      id="target-users"
+      id="use-cases"
       className="bg-background mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:px-36 lg:py-24"
     >
       <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:gap-12 lg:pb-12">
