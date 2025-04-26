@@ -21,14 +21,15 @@ const Header: React.FC<HeaderProps> = () => {
     <header className="bg-secondary fixed top-0 left-0 z-50 w-full shadow-lg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="my-4 flex h-16 items-center justify-between">
-          {' '}
-          <Image
-            src={LogoImage.src}
-            width={160}
-            height={40}
-            alt="pc-group-logo"
-            className="color-white h-18 w-40 align-baseline"
-          ></Image>
+          <a href="#hero" onClick={(e) => handleScroll(e, 'hero')}>
+            <Image
+              src={LogoImage.src}
+              width={160}
+              height={40}
+              alt="ant-energy-logo"
+              className="color-white h-18 w-40 align-baseline"
+            ></Image>
+          </a>
           <nav className="space-x-6">
             <a href="#overview" onClick={(e) => handleScroll(e, 'overview')}>
               Overview
