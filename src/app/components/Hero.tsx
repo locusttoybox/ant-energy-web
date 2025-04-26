@@ -15,7 +15,7 @@ export default function Hero() {
       <Image src={HeroImage.src} alt="ant" layout="fill" objectFit="cover" className="z-0" />
 
       {/* Hero Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 text-center lg:flex-row lg:justify-center lg:px-36 lg:text-left">
+      <div className="absolute inset-0 z-10 mx-auto flex flex-col items-center justify-center px-6 text-center lg:flex-row lg:justify-center lg:text-left">
         <div className="lg:w-4/6">
           <h1 className="text-foreground mb-10 text-4xl font-extrabold md:text-5xl lg:text-6xl">
             ANT Energy Automated Network for Transmission Inspired by nature, powered by innovation.
