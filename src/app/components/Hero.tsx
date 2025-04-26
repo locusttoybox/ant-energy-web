@@ -1,8 +1,9 @@
+'use client';
+import React from 'react';
 import '../globals.css';
 import Button from './Button';
-import HeroImage from '../assets/hero-image.jpeg';
+import HeroImage from '../assets/hero-image.png';
 import Image from 'next/image';
-import React from 'react';
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-10 mx-auto flex w-screen flex-col items-center justify-center px-6 py-20 sm:px-6 md:py-24 lg:flex-row lg:justify-center lg:px-36 lg:py-24 lg:text-left">
           <div className="lg:flex-col-2 flex">
             <div className="lg:w-2/3">
-              <h1 className="text-foreground mb-10 text-4xl font-extrabold md:text-5xl lg:text-6xl">
+              <h1 className="text-foreground mb-10 text-center text-4xl font-extrabold md:text-5xl lg:text-left lg:text-6xl">
                 ANT Energy Automated Network for Transmission Inspired by nature, powered by
                 innovation.
               </h1>

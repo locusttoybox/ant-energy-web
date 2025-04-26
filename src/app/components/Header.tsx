@@ -1,4 +1,6 @@
 'use client';
+import Link from 'next/link';
+import '../globals.css';
 import React from 'react';
 import Image from 'next/image';
 import LogoImage from '../assets/ant-logo.png';
@@ -30,26 +32,46 @@ const Header: React.FC<HeaderProps> = () => {
               className="color-white h-18 w-40 align-baseline"
             ></Image>
           </a>
-          <nav className="space-x-6">
-            <a href="#overview" onClick={(e) => handleScroll(e, 'overview')}>
+          <nav className="hidden space-x-6 md:flex">
+            <a
+              href="#overview"
+              className="hover:text-accent"
+              onClick={(e) => handleScroll(e, 'overview')}
+            >
               Overview
             </a>
-            <a href="#features" onClick={(e) => handleScroll(e, 'features')}>
+            <a
+              href="#features"
+              className="hover:text-accent"
+              onClick={(e) => handleScroll(e, 'features')}
+            >
               Key Features
             </a>
-            <a href="#target-users" onClick={(e) => handleScroll(e, 'target-users')}>
+            <a
+              href="#target-users"
+              className="hover:text-accent"
+              onClick={(e) => handleScroll(e, 'target-users')}
+            >
               Target Users
             </a>
 
-            <a href="#about-project" onClick={(e) => handleScroll(e, 'about-project')}>
+            <a
+              href="#about-project"
+              className="hover:text-accent"
+              onClick={(e) => handleScroll(e, 'about-project')}
+            >
               About Project
             </a>
-            <a href="#use-cases" onClick={(e) => handleScroll(e, 'use-cases')}>
+            <a
+              href="#use-cases"
+              className="hover:text-accent"
+              onClick={(e) => handleScroll(e, 'use-cases')}
+            >
               Use Cases
             </a>
-            <a href="#about-us" onClick={(e) => handleScroll(e, 'about-us')}>
+            <Link href="/about" className="hover:text-accent">
               About Us
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
