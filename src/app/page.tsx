@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import './globals.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -21,9 +20,6 @@ export default function Home() {
           <TargetUsers />
           <AboutProject />
           <UseCases />
-          <Link href="/about" className="text-accent hover:underline">
-            About Us
-          </Link>
         </div>
       </main>
     </>

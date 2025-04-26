@@ -34,11 +34,24 @@ body {
 
 html,
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Add any Android-specific fixes */
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* Android-specific styles go here */
+  body {
+    /* Example fix for potential Android issues */
+    position: relative;
+  }
 }
