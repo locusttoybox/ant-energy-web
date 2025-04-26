@@ -16,7 +16,6 @@ export default function Home() {
           <Hero />
           <Overview />
           <KeyFeatures />
-
           <TargetUsers />
           <AboutProject />
           <UseCases />
