@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = () => {
     <header className="bg-secondary fixed top-0 left-0 z-50 w-full shadow-lg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="my-4 flex h-16 items-center justify-between">
-          <a href="#hero" onClick={(e) => handleScroll(e, 'hero')}>
+          <Link href="/">
             <Image
               src={LogoImage.src}
               width={160}
@@ -31,13 +31,10 @@ const Header: React.FC<HeaderProps> = () => {
               alt="ant-energy-logo"
               className="color-white h-18 w-40 align-baseline"
             ></Image>
-          </a>
+          </Link>
+
           <nav className="hidden space-x-6 md:flex">
-            <a
-              href="#overview"
-              className="hover:text-accent"
-              onClick={(e) => handleScroll(e, 'overview')}
-            >
+            <a href="#overview" className="hover:text-accent">
               Overview
             </a>
             <a
