@@ -10,7 +10,7 @@ export default function TargetUsers() {
       id="target-users"
       className="bg-background mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:px-36 lg:py-24"
     >
-      <div className="flex flex-col pb-12 lg:flex-row lg:items-center lg:gap-12">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 lg:pb-12">
         <div>
           <div className="flex flex-1 justify-center pb-10">
             <Image
