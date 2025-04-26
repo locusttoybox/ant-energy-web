@@ -4,7 +4,10 @@ import { aboutProject, aboutProjectPoints } from '../data/aboutProject';
 
 export default function AboutProject() {
   return (
-    <section id="about-project" className="bg-foreground flex h-full w-screen px-10 py-24 lg:px-36">
+    <section
+      id="about-project"
+      className="scroll-offset bg-foreground flex h-full w-screen px-10 py-24 lg:px-36"
+    >
       <div className="w-full">
         {/* Titles Section */}
         <div className="flex flex-col justify-between gap-8 sm:flex-row md:pb-12 lg:pb-12">

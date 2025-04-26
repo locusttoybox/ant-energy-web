@@ -23,7 +23,7 @@ export default function KeyFeatures() {
   return (
     <section
       id="features"
-      className="bg-foreground mx-auto w-screen px-10 pt-10 pb-20 sm:px-6 md:py-24 lg:px-36 lg:py-36 lg:pt-12 lg:pb-24"
+      className="scroll-offset bg-foreground mx-auto w-screen px-10 pt-10 pb-20 sm:px-6 md:py-24 lg:px-36 lg:py-36 lg:pt-12 lg:pb-24"
     >
       {/* FeaturesIntro on the left and Image on the right */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">

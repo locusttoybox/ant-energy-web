@@ -3,7 +3,10 @@ import '../globals.css';
 
 export default function Features() {
   return (
-    <section id="features" className="bg-foreground mx-auto w-screen px-10 py-24 sm:px-6 lg:px-36">
+    <section
+      id="features"
+      className="scroll-offset bg-foreground mx-auto w-screen px-10 py-24 sm:px-6 lg:px-36"
+    >
       <div className="flex flex-col lg:w-1/2">
         <div className="text-secondary pb-10 text-4xl font-extrabold md:text-4xl">
           <h1>Key Features</h1>

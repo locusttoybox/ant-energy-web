@@ -47,6 +47,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.scroll-offset {
+  scroll-margin-top: 80px; /* Adjust this value to match your header height */
+}
+
 /* Add any Android-specific fixes */
 @supports not (-webkit-overflow-scrolling: touch) {
   /* Android-specific styles go here */

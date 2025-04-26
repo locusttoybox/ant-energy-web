@@ -7,10 +7,11 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen w-screen overflow-hidden">
-      {/* Background Image */}
-      <Image src={HeroImage.src} alt="ant" layout="fill" objectFit="cover" className="z-0" />
-
+    <section id="hero" className="relative h-screen w-screen">
+      <div className="overflow-hidden">
+        {/* Background Image */}
+        <Image src={HeroImage.src} alt="ant" layout="fill" objectFit="cover" className="z-0" />
+      </div>
       {/* Hero Content */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <div className="mx-auto flex w-screen flex-col px-6 py-20 text-center sm:px-6 md:py-24 lg:w-4/6 lg:justify-center lg:px-36 lg:py-24">

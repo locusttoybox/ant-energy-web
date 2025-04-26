@@ -1,7 +1,6 @@
 import React from 'react';
 import '../globals.css';
 import { aboutUs, aboutUsIntro } from '../data/aboutUs';
-import Header from '../components/Header';
 
 export default function AboutPage() {
   return (
@@ -43,7 +42,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-      <Header />
     </>
   );
 }
