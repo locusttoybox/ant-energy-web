@@ -1,7 +1,7 @@
 export interface AboutUs {
   title: string;
   description?: string;
-  points?: string[];
+  points: string[];
 }
 
 export const aboutUs: AboutUs[] = [
@@ -17,22 +17,25 @@ export const aboutUs: AboutUs[] = [
     title: 'Our Impact',
     description:
       'ANT Energy is currently piloting state-of-the-art contactless EV charging stations with V2G integration at 7 locations in Latvia. Our ecosystem connects physical infrastructure with digital intelligence — creating a responsive, scalable, and user-centered model for the energy transition',
+    points: [],
   },
   {
     title: 'Our Vision',
     description:
-      'We envision a world where energy is no longer centralized, wasteful, or passive. Instead, it becomes collaborative, localized, and optimized — powered by data, connected devices, and communities. Let us build the future of energy. Together.',
+      'We envision a world where energy is no longer centralized, wasteful, or passive. Instead, it becomes collaborative, localized, and optimized — powered by data, connected devices, and communities. Let us build the future of energy. Together',
+    points: [],
   },
 ];
 
-export const aboutUsIntro = {
-  title: 'About ANT Energy',
-  description:
-    'At ANT Energy, we are reshaping the future of energy through intelligent, decentralized networks. ANT stands for Automated Network for Transmission — a name inspired by the natural efficiency of ant colonies. Just like ants coordinate and manage resources seamlessly, our platform ensures energy flows smartly across homes, electric vehicles, batteries, and the grid. We develop and deploy innovative technologies that enable energy producers, grid operators, and everyday households to participate in a flexible and data-driven energy ecosystem. Our mission is to unlock the full potential of green energy, empower local energy communities, and make every kilowatt count',
-  points: [
-    'Smart Energy Management: Real-time monitoring, load forecasting, and dynamic usage planning',
-    'EV Charging + V2G: Advanced infrastructure and tools to support vehicle-to-grid energy exchange',
-    'Energy Community Accounting: Seamless financial and energy flow management among peers',
-    'Market Synchronization: Tools to optimize energy prices and grid participation',
-  ],
-};
+export const aboutUsIntro = [
+  {
+    title: 'About ANT Energy',
+    description: 'At ANT Energy, we are reshaping the future of energy...',
+    points: [
+      'Smart Energy Management: Real-time monitoring, load forecasting, and dynamic usage planning',
+      'EV Charging + V2G: Advanced infrastructure and tools to support vehicle-to-grid energy exchange',
+      'Energy Community Accounting: Seamless financial and energy flow management among peers',
+      'Market Synchronization: Tools to optimize energy prices and grid participation',
+    ],
+  },
+];
