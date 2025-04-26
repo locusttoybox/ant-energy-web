@@ -6,9 +6,9 @@ export default function Overview() {
   return (
     <section
       id="overview"
-      className="bg-background mx-auto w-screen px-10 py-24 sm:px-6 lg:px-46 lg:py-36"
+      className="bg-background mx-auto w-screen px-10 py-24 sm:px-6 md:px-12 lg:px-46 lg:py-36"
     >
-      <div className="text-secondary justify-center text-center text-lg md:text-xl lg:text-3xl">
+      <div className="text-secondary justify-center text-center text-lg md:text-2xl lg:text-3xl">
         <p>
           {/* Replace "ANT Energy" with a styled span */}
           {overview[0].description.split('ANT Energy').map((text, index, arr) => (
