@@ -12,7 +12,7 @@ export default function AboutPage() {
         id="about"
         className="bg-background scroll-offset mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:mt-20 lg:px-36 lg:py-24"
       >
-        <div className="flex flex-col flex-nowrap items-center justify-center gap-4 pb-10 md:flex-row lg:flex-row lg:gap-12 lg:pb-28">
+        <div className="mbitems-center mt-22 flex flex-col flex-nowrap justify-center gap-4 pb-10 md:mt-20 md:flex-row lg:mt-0 lg:flex-row lg:gap-12 lg:pb-28">
           <div className="md:2/3 flex flex-row justify-center lg:w-1/3">
             <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:gap-12 lg:pb-12">
               <div>
