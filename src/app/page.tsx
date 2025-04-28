@@ -8,6 +8,7 @@ import UseCases from './components/UseCases';
 import Overview from './components/Overview';
 import AboutProject from './components/AboutProject';
 import Illustration from './components/Illustration';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <AboutProject />
           <Illustration />
           <UseCases />
+          <Footer />
         </div>
       </main>
     </>

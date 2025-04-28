@@ -11,6 +11,7 @@ export default function UseCases() {
       id="use-cases"
       className="scroll-offset bg-foreground mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:px-36 lg:py-24"
     >
+      <h1 className="text-accent pb-10 text-4xl font-extrabold">Use Cases</h1>
       <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:gap-12 lg:pb-12">
         <div className="flex justify-center pb-10 sm:order-1 lg:w-1/2 lg:pb-0">
           <Image
