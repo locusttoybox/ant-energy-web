@@ -7,6 +7,7 @@ import TargetUsers from './components/TargetUsers';
 import UseCases from './components/UseCases';
 import Overview from './components/Overview';
 import AboutProject from './components/AboutProject';
+import Illustration from './components/Illustration';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <KeyFeatures />
           <TargetUsers />
           <AboutProject />
+          <Illustration />
           <UseCases />
         </div>
       </main>

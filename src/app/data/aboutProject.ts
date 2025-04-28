@@ -7,7 +7,7 @@ export const aboutProject: AboutProject[] = [
   {
     title: 'Why ANT',
     description:
-      'Inspired by Nature Like an ant colony, our platform is built for resilience, collaboration, and efficiency. Built for Flexibility From small households to large-scale solar farms—ANT scales with your needs. Future-Proof and Sustainable Accelerate your transition to a green, decentralized energy future',
+      'Inspired by Nature like an ant colony, our platform is built for resilience, collaboration, and efficiency. Built for Flexibility From small households to large-scale solar farms—ANT scales with your needs. Future-Proof and Sustainable Accelerate your transition to a green, decentralized energy future',
   },
 ];
 
