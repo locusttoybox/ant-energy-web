@@ -10,7 +10,7 @@ export default function Hero() {
     <section id="hero" className="relative h-screen w-screen">
       <div className="overflow-hidden">
         {/* Background Image */}
-        <Image src={HeroImage.src} alt="ant" layout="fill" objectFit="cover" className="z-0" />
+        <Image src={HeroImage.src} alt="ant" fill objectFit="cover" className="z-0" />
       </div>
       {/* Hero Content */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
