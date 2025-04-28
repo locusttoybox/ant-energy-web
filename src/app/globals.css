@@ -51,8 +51,16 @@ html {
   scroll-margin-top: 80px; /* Adjust this value to match your header height */
 }
 
-/* @supports not (-webkit-overflow-scrolling: touch) {
+@media only screen and (max-width: 767px) {
+  html,
   body {
-    position: relative;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
-} */
+
+  /* Force-enable your styles on mobile */
+  .your-important-class {
+    display: block !important;
+    /* Add other important styles */
+  }
+}
