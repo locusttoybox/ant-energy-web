@@ -112,7 +112,7 @@ const Header: React.FC = () => {
               X
             </button>
           </div>
-          <nav className="mt-8 flex flex-row gap-6">
+          <nav className="mt-8 flex flex-col gap-6">
             <Link href="/#overview" className="hover:text-secondary text-2xl">
               Overview
             </Link>
