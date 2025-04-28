@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ededed;
   --accent: #f105e3;
   --secondary: #161622;
   --header-height: 72px;
@@ -21,7 +21,7 @@
   :root {
     --background: #ffffff;
     --foreground: #ededed;
-    --accent: #a2f105;
+    --accent: #f105e3;
     --header-height: 72px;
   }
 }
@@ -48,7 +48,7 @@ html {
 }
 
 .scroll-offset {
-  scroll-margin-top: 80px; /* Adjust this value to match your header height */
+  scroll-margin-top: 80px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -58,9 +58,7 @@ html {
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Force-enable your styles on mobile */
   .your-important-class {
     display: block !important;
-    /* Add other important styles */
   }
 }
