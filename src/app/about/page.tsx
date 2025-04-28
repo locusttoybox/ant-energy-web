@@ -10,17 +10,17 @@ export default function AboutPage() {
     <>
       <section
         id="about"
-        className="bg-background mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:mt-20 lg:px-36 lg:py-24"
+        className="bg-background scroll-offset mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:mt-20 lg:px-36 lg:py-24"
       >
-        <div className="flex flex-col flex-nowrap items-center justify-center gap-12 pb-10 md:flex-row lg:flex-row">
-          <div className="flex flex-row justify-center lg:w-1/2">
+        <div className="flex flex-col flex-nowrap items-center justify-center gap-4 pb-10 md:flex-row lg:flex-row lg:gap-12 lg:pb-28">
+          <div className="md:2/3 flex flex-row justify-center lg:w-1/3">
             <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:gap-12 lg:pb-12">
               <div>
                 {aboutUsIntro.map(({ title, description, points }, idx) => (
-                  <div key={idx} className="flex flex-col gap-4 pb-10">
+                  <div key={idx} className="flex flex-col gap-4 pb-12">
                     <h3 className="text-accent text-4xl font-semibold">{title}</h3>
 
-                    <p className="text-secondary text-2xl">{description}</p>
+                    <p className="text-secondary pb-10 text-2xl font-semibold">{description}</p>
 
                     <ul className="text-secondary flex flex-col gap-4 text-base">
                       {points.map((point, index) => (
@@ -32,7 +32,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="relative flex w-full sm:w-auto lg:w-1/2">
+          <div className="md:1/3 relative flex w-full sm:w-auto lg:w-2/3">
             <Image
               src={AboutImage.src}
               alt="ant"
