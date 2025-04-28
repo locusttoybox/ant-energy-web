@@ -30,7 +30,7 @@ export const aboutUs: AboutUs[] = [
 export const aboutUsIntro = [
   {
     title: 'About ANT Energy',
-    description: 'At ANT Energy, we are reshaping the future of energy...',
+    description: 'At ANT Energy, we are reshaping the future of energy',
     points: [
       'Smart Energy Management: Real-time monitoring, load forecasting, and dynamic usage planning',
       'EV Charging + V2G: Advanced infrastructure and tools to support vehicle-to-grid energy exchange',
