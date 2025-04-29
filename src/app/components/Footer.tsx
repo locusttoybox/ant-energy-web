@@ -25,49 +25,52 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           <div className="mx-auto px-4 py-12 sm:px-6 lg:px-10">
             <ul className="flex flex-wrap justify-center gap-6 sm:gap-4 md:gap-10 lg:gap-10">
               <li>
-                <a
-                  href="/overview"
+                <Link
+                  href="/#overview"
                   className="text-foreground hover:text-accent text-left text-base"
                 >
                   Overview
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/key-features"
+                <Link
+                  href="/#features"
                   className="text-foreground hover:text-accent text-left text-base"
                 >
                   Key Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/target-users"
+                <Link
+                  href="/#target-users"
                   className="text-foreground hover:text-accent text-left text-base"
                 >
                   Target Users
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about-project"
+                <Link
+                  href="/#about-project"
                   className="text-foreground hover:text-accent text-left text-base"
                 >
                   About Project
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/use-cases"
+                <Link
+                  href="/#use-cases"
                   className="text-foreground hover:text-accent text-left text-base"
                 >
                   Use Cases
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-foreground hover:text-accent text-left text-base">
+                <Link
+                  href="/about"
+                  className="text-foreground hover:text-accent text-left text-base"
+                >
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
