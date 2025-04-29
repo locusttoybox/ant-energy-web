@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <section
         id="about"
-        className="bg-background scroll-offset mx-auto w-screen px-10 py-20 sm:px-6 md:py-24 lg:mt-20 lg:px-36 lg:py-24"
+        className="bg-background scroll-offset mx-auto w-screen px-10 pt-20 pb-0 sm:px-6 md:py-24 lg:mt-20 lg:px-36 lg:py-24"
       >
         <div className="mbitems-center mt-22 flex flex-col flex-nowrap justify-center gap-4 pb-10 md:mt-20 md:flex-row lg:mt-0 lg:flex-row lg:gap-12 lg:pb-28">
           <div className="md:2/3 flex flex-row justify-center lg:w-1/3">
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-12 pb-12 lg:flex-nowrap lg:justify-start">
+        <div className="flex flex-wrap justify-center gap-2 pb-12 lg:flex-nowrap lg:justify-start lg:gap-12">
           {aboutUs.map(({ title, description, points }, idx) => (
             <div key={idx} className="flex w-full flex-col gap-2 pb-10 lg:w-1/3">
               <h3 className="text-accent mb-2 text-2xl font-semibold">{title}</h3>
