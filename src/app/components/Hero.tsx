@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 import '../globals.css';
 import Button from './Button';
 import HeroImage from '../assets/hero-image.png';
@@ -22,7 +23,9 @@ export default function Hero() {
             Automated Network for Transmission. Inspired by nature, powered by innovation
           </p>
           <div className="flex justify-center gap-4">
-            <Button variant="outlineBlack">Explore the Platform</Button>
+            <Link href="/#features">
+              <Button variant="outlineBlack">Explore the Platform</Button>
+            </Link>
           </div>
         </div>
       </div>
