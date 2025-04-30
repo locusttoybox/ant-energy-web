@@ -32,7 +32,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="md:1/3 relative flex w-full sm:w-auto lg:w-2/3">
+          <div className="md:1/3 relative flex w-full justify-center overflow-hidden sm:w-auto lg:w-2/3">
             <Image
               src={AboutImage.src}
               alt="ant"
