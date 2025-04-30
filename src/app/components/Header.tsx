@@ -8,9 +8,39 @@ import LogoImage from '../assets/ant-logo.png';
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleClickOutside = (event: MouseEvent) => {
+    // First check if click is on a navigation link
+    const clickedLink = (event.target as HTMLElement).closest('a');
+
+    if (clickedLink) {
+      // If it's an in-page navigation link (starts with #)
+      if (clickedLink.getAttribute('href')?.startsWith('#')) {
+        // Close the menu
+        setMenuOpen(false);
+
+        // Handle in-page navigation
+        const targetId = clickedLink.getAttribute('href')?.substring(1);
+        if (targetId) {
+          event.preventDefault();
+
+          // Small delay to allow menu to close
+          setTimeout(() => {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          }, 300);
+        }
+      }
+      // Regular links (like About page) will work normally
+      // Menu will close because of the navigation
+      return;
+    }
+
+    // If not clicking on a link, use your original logic to close the menu
     if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setMenuOpen(false);
     }
@@ -67,7 +97,7 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Burger Menu for Small Screens */}
-          <div className="lg:hidden">
+          <div className="md:flex lg:hidden">
             <button
               onClick={toggleMenu}
               className="hover:text-accent text-white focus:outline-none"
@@ -113,19 +143,19 @@ const Header: React.FC = () => {
             </button>
           </div>
           <nav className="mt-8 flex flex-col gap-6">
-            <Link href="/#overview" className="hover:text-secondary text-2xl">
+            <Link href="#overview" className="hover:text-secondary text-2xl">
               Overview
             </Link>
-            <Link href="/#features" className="hover:text-secondary text-2xl">
+            <Link href="#features" className="hover:text-secondary text-2xl">
               Key Features
             </Link>
-            <Link href="/#target-users" className="hover:text-secondary text-2xl">
+            <Link href="#target-users" className="hover:text-secondary text-2xl">
               Target Users
             </Link>
-            <Link href="/#about-project" className="hover:text-secondary text-2xl">
+            <Link href="#about-project" className="hover:text-secondary text-2xl">
               About Project
             </Link>
-            <Link href="/#use-cases" className="hover:text-secondary text-2xl">
+            <Link href="#use-cases" className="hover:text-secondary text-2xl">
               Use Cases
             </Link>
             <Link href="/about" className="hover:text-secondary text-2xl">

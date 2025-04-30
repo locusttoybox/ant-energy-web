@@ -19,7 +19,7 @@ export default function Hero() {
           <h1 className="text-accent mb-4 text-4xl font-extrabold md:text-5xl lg:text-6xl">
             ANT Energy
           </h1>
-          <p className="text-foreground mb-8 text-2xl font-normal md:text-2xl lg:text-5xl">
+          <p className="text-foreground mb-8 text-2xl font-normal md:text-5xl lg:text-5xl">
             Automated Network for Transmission. Inspired by nature, powered by innovation
           </p>
           <div className="flex justify-center gap-4">
