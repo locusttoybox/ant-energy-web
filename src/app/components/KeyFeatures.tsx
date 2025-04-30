@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../globals.css';
 import Image from 'next/image';
 import AppImage from '../assets/app-1.png';
@@ -8,9 +8,26 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export default function KeyFeatures() {
   const [index, setIndex] = useState(0);
-  const visibleCards = 3;
+  const [visibleCards, setVisibleCards] = useState(1); // Default to 1 card for small screens
   const totalCards = features.length;
   const maxIndex = totalCards - visibleCards;
+
+  // Adjust visibleCards based on screen size
+  useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth >= 1024) {
+        setVisibleCards(3); // 3 cards for large screens (lg)
+      } else if (window.innerWidth >= 768) {
+        setVisibleCards(2); // 2 cards for medium screens (md)
+      } else {
+        setVisibleCards(1); // 1 card for small screens (sm)
+      }
+    };
+
+    updateVisibleCards(); // Set initial value
+    window.addEventListener('resize', updateVisibleCards); // Listen for screen size changes
+    return () => window.removeEventListener('resize', updateVisibleCards); // Cleanup listener
+  }, []);
 
   const next = () => {
     if (index < maxIndex) setIndex(index + 1);
@@ -112,8 +129,9 @@ export default function KeyFeatures() {
                   }}
                 >
                   <div className="bg-secondary flex h-full flex-col justify-between gap-6 rounded-xl p-12 text-center align-top shadow-md">
-                    <h3 className="text-foreground mb-2 text-2xl font-semibold">{title}</h3>
-
+                    <h3 className="text-foreground mb-2 text-2xl font-semibold whitespace-pre-wrap">
+                      {title}
+                    </h3>
                     {/* Points container with equal height items */}
                     <div className="flex flex-grow flex-col items-start gap-3">
                       {points.map((point, idx) => (

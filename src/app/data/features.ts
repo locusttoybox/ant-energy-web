@@ -14,7 +14,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: 'Dynamic Market Interaction',
+    title: 'Dynamic Market\nInteraction',
     points: [
       'Integration with electricity markets for real-time kWh pricing',
       'Automated transactions based on market fluctuations, user needs, and storage capacity',
@@ -39,7 +39,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: 'Smart Energy Management',
+    title: 'Smart Energy\nManagement',
     points: [
       'Real-time tracking of energy production and consumption',
       'AI-driven forecasting and load balancing',

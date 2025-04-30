@@ -5,12 +5,12 @@ export interface TargetUser {
 
 export const targetUsers: TargetUser[] = [
   {
-    title: 'Green Energy Producers',
+    title: 'Green Energy\nProducers',
     description:
       'Hydro, and biogas operators looking to integrate with flexible and intelligent energy distribution systems.',
   },
   {
-    title: 'Energy Communities',
+    title: 'Energy\nCommunities',
     description:
       'Entities responsible for ensuring real-time energy balance and grid stability across regions or communities',
   },
